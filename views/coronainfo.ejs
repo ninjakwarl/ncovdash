@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head'); -%>
+
+<body>
+    <%- include('./partials/navigation'); -%>
+    <div class="container-fluid">
+        <div class="col" style="background-color: #4a4b4f; width: inherit; border-radius: 25px;">
+            <h1
+                style="color: white; font-size: 45px; text-align: center; padding-top: 15px; font-weight: bolder; margin-bottom: 25px;">
+                <svg style="width: 50px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                    <path fill="white"
+                        d="M128 128a128 128 0 1 0 128 128 128 128 0 0 0-128-128zm64 144a5.33 5.33 0 0 1-5.33 5.33h-37.34v37.34A5.33 5.33 0 0 1 144 320h-32a5.33 5.33 0 0 1-5.33-5.33v-37.34H69.33A5.33 5.33 0 0 1 64 272v-32a5.33 5.33 0 0 1 5.33-5.33h37.34v-37.34A5.33 5.33 0 0 1 112 192h32a5.33 5.33 0 0 1 5.33 5.33v37.34h37.34A5.33 5.33 0 0 1 192 240zM64 480a32 32 0 0 0 32 32h64a32 32 0 0 0 32-32v-64H64zM192 32a32 32 0 0 0-32-32H96a32 32 0 0 0-32 32v64h128zm447.11 411.25L525.51 19.06C522.2 6.7 509.61-3.18 494.15 1L478.7 5.1q-9.27 2.49-16.06 14.24c-14 6.94-52.3 17.21-68 18.22q-11.76-6.8-21-4.3l-15.49 4.14c-2.42.65-4.2 2-6.15 3.08V32a32 32 0 0 0-32-32h-64a32 32 0 0 0-32 32v64h128l101.66 396.94C457 505.3 469.56 515.18 485 511l15.45-4.14q9.27-2.49 16.06-14.24c13.91-6.88 52.18-17.2 68-18.22q11.76 6.8 21 4.3l15.49-4.1c15.47-4.14 21.43-18.99 18.11-31.35zm-134.4-7.06L412.64 92.37l61.82-16.56 92.07 343.82zM224 128.81c38.62 29.24 64 75.12 64 127.19s-25.38 98-64 127.19v.81h128V128H224zM224 480a32 32 0 0 0 32 32h64a32 32 0 0 0 32-32v-64H224z" />
+                </svg> The Center for Coronavirus Information
+            </h1>
+            <p style="text-align: center; color: #ffffff;">The sources for this information are linked in the Source tab
+                of the navbar.</p>
+            <div class="row">
+                <div class="col-lg-11 col-sm-12 container--wrap center">
+                    <h2
+                        style="color: #ffffff; font-size: 35px; text-align: center; padding-top: 15px; font-weight: bolder;">
+                        <svg style="width: 25px; padding-bottom: 6px" aria-hidden="true" focusable="false"
+                            data-prefix="fas" data-icon="question-circle"
+                            class="svg-inline--fa fa-question-circle fa-w-16" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z">
+                            </path>
+                        </svg> What is the Coronavirus?</h2>
+                    <ol style="color: #ffffff; font-size: 20px;">
+                        <li>
+                            2019 Novel Coronavirus (2019-nCoV) is a virus (more specifically, a coronavirus)
+                            identified as the cause of an outbreak of respiratory illness first detected in Wuhan,
+                            China.
+                        </li>
+                        <li>
+                            Early on, many of the patients in the outbreak in Wuhan, China reportedly had some link
+                            to a large seafood and animal market, suggesting animal-to-person spread.
+                        </li>
+                        <li>
+                            However, a growing number of patients reportedly have not had exposure to animal
+                            markets, indicating person-to-person spread is occurring.
+                        </li>
+                        <li>
+                            The name coronavirus is derived from the Latin corona, meaning "crown" or "halo", which
+                            refers to the characteristic appearance reminiscent of a crown.
+                        </li>
+                    </ol>
+                    <h2
+                        style="color: #ffffff; font-size: 35px; text-align: center; padding-top: 15px; font-weight: bolder;">
+                        What does it look like?</h2>
+                    <p style="text-align: center; color: #ffffff;">These images are colorized and from electron
+                        microscropes</p>
+                    <div style="text-align: center;">
+                        <img width="500px;"
+                            src="https://cnet1.cbsistatic.com/img/uczm50w1XdnHgoE962ade2rOB5w=/940x0/2020/01/21/144e65f7-60cd-4dc7-ab7c-d93fb75ad624/gettyimages-1134490146.jpg"
+                            alt="Coronavirus under a microscope">
+                        <img width="500px;"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/SARS-CoV-2_49534865371.jpg/440px-SARS-CoV-2_49534865371.jpg"
+                            alt="Coronavirus under a microscope">
+                        <img width="500px;"
+                            src="https://media.npr.org/assets/img/2012/09/26/gettyimages_151032915_wide-28f4f9f0bffdab37a4b891d28a17b12ae7370f3f-s800-c85.jpg"
+                            alt="Coronavirus under a microscope">
+                    </div>
+                    <h2
+                        style="color: #ffffff; font-size: 35px; text-align: center; padding-top: 15px; font-weight: bolder;">
+                        How do you get infected?</h2>
+                    <ol style="color: #ffffff; font-size: 20px;">
+                        <li>
+                            The main route of transmission is respiratory droplets and close contact.
+                        </li>
+                        <li>
+                            When you sneeze or cough, you send out droplets of fluid from your nose and mouth.
+                        </li>
+                        <li>
+                            Those droplets can carry infections, and when they enter someone else's enter the eyes, nose
+                            or mouth, the infection can make them sick. This is the way the flu and many viruses are
+                            spread.
+                        </li>
+                        <li>
+                            Most often, you need to be close to the person (within 6 feet) for it to spread this way.
+                        </li>
+                        <li>
+                            There is the possibility of aerosol transmission when exposed to high concentration aerosol
+                            for a long time in a relatively closed environment.
+                        </li>
+                        <li>
+                            The WHO has stated that the risk of spread from someone without symptoms is "very low" and
+                            that fecal transmission is "low".
+                        </li>
+                    </ol>
+
+                    <h2
+                        style="color: #ffffff; font-size: 35px; text-align: center; padding-top: 15px; font-weight: bolder;">
+                        Mythbusters</h2>
+                    <ol style="color: #ffffff; font-size: 20px;">
+                        <li>
+                            COVID-19 virus can be transmitted in areas with hot and humid climates.
+                        </li>
+                        <li>
+                            Cold weather and snow CANNOT kill the new coronavirus.
+                        </li>
+                        <li>
+                            Taking a hot bath does not prevent the new coronavirus disease.
+                        </li>
+                        <li>
+                            The new coronavirus CANNOT be transmitted through mosquito bites.
+                        </li>
+                        <li>
+                            Are hand dryers effective in killing the new coronavirus?
+                            <br><i>No. Hand dryers are not effective in killing the 2019-nCoV.</i>
+                        </li>
+                        <li>
+                            Can an ultraviolet disinfection lamp kill the new coronavirus?
+                            <br><i>UV lamps should not be used to sterilize hands or other areas of skin as UV radiation can cause skin irritation.</i>
+                        </li>
+                        <li>
+                            Can spraying alcohol or chlorine all over your body kill the new coronavirus?
+                            <br><i>No. Spraying alcohol or chlorine all over your body will not kill viruses that have already entered your body.</i>
+                        </li>
+                        <li>
+                            Do vaccines against pneumonia protect you against the new coronavirus?
+                            <br> <i>No. Vaccines against pneumonia, such as pneumococcal vaccine and Haemophilus influenza type B (Hib) vaccine, do not provide protection against the new coronavirus.</i>
+                        </li>
+                        <li>
+                            Can regularly rinsing your nose with saline help prevent infection with the new coronavirus?
+                            <br> <i>No. There is no evidence that regularly rinsing the nose with saline has protected people from infection with the new coronavirus.</i>
+                        </li>
+                        <li>
+                            Can eating garlic help prevent infection with the new coronavirus?
+                            <br> <i>Garlic is a healthy food that may have some antimicrobial properties. However, there is no evidence from the current outbreak that eating garlic has protected people from the new coronavirus.</i>
+                        </li>
+                        <li>
+                            Are antibiotics effective in preventing and treating the new coronavirus?
+                            <br> <i>No, antibiotics do not work against viruses, only bacteria.</i>
+                        </li>
+                    </ol>
+
+                    <h2
+                        style="color: #ffffff; font-size: 35px; text-align: center; padding-top: 15px; font-weight: bolder;">
+                        How can I protect myself?</h2>
+                    <h2
+                        style="color: #ffffff; font-size: 35px; text-align: left; padding-top: 15px; font-weight: bolder;">
+                        Handwashing</h2>
+                    <ol style="color: #ffffff; font-size: 20px;">
+                        <li>
+                            A number of governments advise against all non-essential travel to countries and areas
+                            affected by the outbreak.
+                        </li>
+                        <li>
+                            There are misconceptions circulating about how to prevent infection: rinsing the nose,
+                            gargling with mouthwash, and eating garlic are not effective. </li>
+                        <li>
+                            The CDC recommends that people wash hands often with soap and water for at least 20 seconds,
+                            especially after going to the toilet or when hands are visibly dirty. </li>
+                        <ul>
+                            <li>
+                                It further recommended using an alcohol-based hand sanitiser with at least 60% alcohol
+                                by volume (or 120 proof) when soap and water are not readily available.
+                            </li>
+                            <li>
+                                The WHO also advise people to avoid touching the eyes, nose, or mouth with unwashed
+                                hands.
+                            </li>
+                        </ul>
+
+                    </ol>
+                    <h2
+                        style="color: #ffffff; font-size: 35px; text-align: left; padding-top: 15px; font-weight: bolder;">
+                        Respiratory hygiene</h2>
+                    <ol style="color: #ffffff; font-size: 20px;">
+                        <li>
+                            Health organizations recommended that people cover their mouth and nose with a tissue when
+                            coughing or sneezing (which should then be disposed of immediately), or with a sleeve if a
+                            tissue is not available.
+                        </li>
+                        <li>
+                            The use of surgical masks by those who may be infected has also been recommended, as they
+                            can limit the volume and travel distance of expiratory droplets dispersed when talking,
+                            sneezing, and coughing.</li>
+                        <li>
+                            There is no evidence to show that the wearing of surgical masks by uninfected people at low
+                            risk is effective.
+                        </li>
+                        <li>
+                            Only China has specifically recommended the use of masks by healthy members of the public,
+                            while face masks have been widely used by healthy people in Hong Kong, Japan, Malaysia, and
+                            Singapore.
+                        </li>
+                    </ol>
+                    <h2
+                        style="color: #ffffff; font-size: 35px; text-align: left; padding-top: 15px; font-weight: bolder;">
+                        How to use a mask</h2>
+                    <ol style="color: #ffffff; font-size: 20px;">
+                        <li>
+                            Wear a mask if you are <em>coughing</em> or <em>sneezing</em>.
+                        </li>
+                        <li>
+                            If you wear a mask, then you must know how to use it and dispose of it properly.
+                        </li>
+                        <li>
+                            Before putting on a mask, clean your hands with alcohol-based hand rub or soap and water.
+                        </li>
+                        <li>
+                            Cover your mouth and nose with the mask and make sure there are no gaps between your face
+                            and the mask.
+                        </li>
+                        <li>
+                            Avoid touching the mask while using it.
+                        </li>
+                        <li>
+                            Replace the mask with a new one as soon as it is damp and do not re-use single-use masks.
+                        </li>
+                        <li>
+                            To remove the mask, remove it from behind (do not touch the front of the mask), discard it
+                            immediately in a closed bin, and then clean your hands with alcohol-based hand rub or soap
+                            and water.
+                        </li>
+                    </ol>
+                    <h2
+                        style="color: #ffffff; font-size: 35px; text-align: left; padding-top: 15px; font-weight: bolder;">
+                        How do I know if I am infected?</h2>
+                    <p style="color: #ffffff;">Common signs of infection include respiratory symptoms, fever, cough,
+                        shortness of breath and breathing difficulties. In more severe cases, infection can cause
+                        pneumonia, severe acute respiratory syndrome, kidney failure and even death. </p>
+                    <table style="color: #ffffff;">
+                        <tr>
+                            <th>Symptom</th>
+                            <th>%</th>
+                        </tr>
+                        <tr>
+                            <td>Fever</td>
+                            <td>87.9%</td>
+                        </tr>
+                        <tr>
+                            <td>Dry cough</td>
+                            <td>67.7%</td>
+                        </tr>
+                        <tr>
+                            <td>Fatigue</td>
+                            <td>38.1%</td>
+                        </tr>
+                        <tr>
+                            <td>Sputum production</td>
+                            <td>33.4%</td>
+                        </tr>
+                        <tr>
+                            <td>Shortness of breath</td>
+                            <td>18.6%</td>
+                        </tr>
+                        <tr>
+                            <td>Muscle pain or joint pain</td>
+                            <td>14.8%</td>
+                        </tr>
+                        <tr>
+                            <td>Sore throat</td>
+                            <td>13.9%</td>
+                        </tr>
+                        <tr>
+                            <td>Headache</td>
+                            <td>13.6%</td>
+                        </tr>
+                        <tr>
+                            <td>Chills</td>
+                            <td>11.4%</td>
+                        </tr>
+                        <tr>
+                            <td>Nausea or vomiting</td>
+                            <td>5.0%</td>
+                        </tr>
+                        <tr>
+                            <td>Nasal congestion</td>
+                            <td>4.8%</td>
+                        </tr>
+                        <tr>
+                            <td>Diarrhea</td>
+                            <td>3.7%</td>
+                        </tr>
+                        <tr>
+                            <td>Haemoptysis</td>
+                            <td>0.9%</td>
+                        </tr>
+                        <tr>
+                            <td>Conjunctival congestion</td>
+                            <td>0.8%</td>
+                        </tr>
+                    </table>
+
+                    <h2 style="color: #ffffff; font-size: 35px; text-align: left; padding-top: 15px; font-weight: bolder;">
+                        Ok I think I'm infected, now what?</h2>
+                    <ol style="color: #ffffff; font-size: 20px;">
+                        <li>
+                            Self-isolation at home has been recommended for those diagnosed with COVID-19 and those who
+                            suspect they have been infected.
+                        </li>
+                        <li>
+                            Public health agencies have issued self-isolation instructions that include notification of
+                            healthcare providers by phone and restricting all activities outside of the home, except for
+                            getting medical care.
+                        </li>
+                        <li>
+                            Do not go to work, school, or public areas. Avoid using public transportation, ride-sharing,
+                            or taxis
+                        </li>
+                        <li>
+                            Those who have recently travelled to a country with widespread transmission or who have been in direct contact with someone diagnosed with COVID-19 have also been asked by some government health agencies to self-quarantine or practise social distancing for 14 days from the time of last possible exposure.
+                        </li>
+                        <li>
+                            Attempts to relieve the symptoms may include taking regular (over-the-counter) cold medications, drinking fluids, and resting. Depending on the severity, oxygen therapy, intravenous fluids, and breathing support may be required.
+                        </li>
+                        <li>
+                            The use of steroids may worsen outcomes.
+                        </li>
+                    </ol>
+                    <h2 style="color: #ffffff; font-size: 35px; text-align: left; padding-top: 15px; font-weight: bolder;">
+                        Is there a vaccine or a cure?</h2>
+                        <ol style="color: #ffffff; font-size: 20px;">
+                            <li>   
+No vaccine is currently available.
+                            </li>
+                            <li>
+                                Several organisations around the world are developing vaccines, using several different methods.
+                            </li>
+                            <li>
+                                By early March 2020, 30 vaccine candidates were in development, with products by Gilead Sciences and Ascletis Pharma in Phase III clinical trials.
+                            </li>
+                            <li>
+                                Several compounds, which were previously approved for treatment of other viral diseases, such as favipiravir, ribavirin, remdesivir and galidesivir, are being investigated against the coronavirus.
+                            </li>
+                            <li>
+                                Clinical trials are underway in for lopinavir/ritonavir and of remdesivir.
+                            </li>
+                            <li>
+                                Bruce Aylward, an assistant director-general of the WHO, has stated "there is only one drug right now that we think may have real efficacy and that's remdesivir."
+                            </li>
+                        </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./partials/scripts'); -%>
+</body>
+
+</html>

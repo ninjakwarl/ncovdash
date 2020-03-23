@@ -1,0 +1,955 @@
+{
+    "otherProvinces": [
+        {
+            "index": "7",
+            "country": "Mainland China",
+            "cases": "80,651",
+            "deaths": "3,070",
+            "serious": "5,489",
+            "critical": "-",
+            "recovered": "55,404",
+            "mystery": "Source"
+        },
+        {
+            "index": "8",
+            "country": "South Korea",
+            "cases": "6,767",
+            "deaths": "44",
+            "serious": "27",
+            "critical": "25",
+            "recovered": "108",
+            "mystery": "Source"
+        },
+        {
+            "index": "9",
+            "country": "Iran",
+            "cases": "4,747",
+            "deaths": "124",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "913",
+            "mystery": "Source"
+        },
+        {
+            "index": "10",
+            "country": "Italy",
+            "cases": "4,636",
+            "deaths": "197",
+            "serious": "462",
+            "critical": "-",
+            "recovered": "523",
+            "mystery": "Source"
+        },
+        {
+            "index": "11",
+            "country": "Diamond Princess",
+            "cases": "696",
+            "deaths": "6",
+            "serious": "34",
+            "critical": "-",
+            "recovered": "40",
+            "mystery": "Source"
+        },
+        {
+            "index": "12",
+            "country": "Germany",
+            "cases": "670",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "2",
+            "recovered": "17",
+            "mystery": "Source"
+        },
+        {
+            "index": "13",
+            "country": "France",
+            "cases": "613",
+            "deaths": "9",
+            "serious": "23",
+            "critical": "-",
+            "recovered": "12",
+            "mystery": "Source"
+        },
+        {
+            "index": "14",
+            "country": "Spain",
+            "cases": "402",
+            "deaths": "5",
+            "serious": "7",
+            "critical": "-",
+            "recovered": "2",
+            "mystery": "Source"
+        },
+        {
+            "index": "15",
+            "country": "Japan",
+            "cases": "418",
+            "deaths": "6",
+            "serious": "29",
+            "critical": "-",
+            "recovered": "10",
+            "mystery": "Source"
+        },
+        {
+            "index": "16",
+            "country": "United States",
+            "cases": "329",
+            "deaths": "16",
+            "serious": "2",
+            "critical": "6",
+            "recovered": "9",
+            "mystery": "Source"
+        },
+        {
+            "index": "17",
+            "country": "Switzerland",
+            "cases": "210",
+            "deaths": "1",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "3",
+            "mystery": "Source"
+        },
+        {
+            "index": "18",
+            "country": "United Kingdom",
+            "cases": "164",
+            "deaths": "1",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "12",
+            "mystery": "Source"
+        },
+        {
+            "index": "19",
+            "country": "Sweden",
+            "cases": "137",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "20",
+            "country": "Singapore",
+            "cases": "130",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "9",
+            "recovered": "82",
+            "mystery": "Source"
+        },
+        {
+            "index": "21",
+            "country": "Netherlands",
+            "cases": "128",
+            "deaths": "1",
+            "serious": "1",
+            "critical": "-",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "22",
+            "country": "Norway",
+            "cases": "127",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "23",
+            "country": "Belgium",
+            "cases": "109",
+            "deaths": "0",
+            "serious": "1",
+            "critical": "-",
+            "recovered": "1",
+            "mystery": "Source"
+        },
+        {
+            "index": "24",
+            "country": "Hong Kong",
+            "cases": "108",
+            "deaths": "2",
+            "serious": "2",
+            "critical": "4",
+            "recovered": "51",
+            "mystery": "Source"
+        },
+        {
+            "index": "25",
+            "country": "Malaysia",
+            "cases": "83",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "23",
+            "mystery": "Source"
+        },
+        {
+            "index": "26",
+            "country": "Austria",
+            "cases": "66",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "27",
+            "country": "Australia",
+            "cases": "62",
+            "deaths": "2",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "22",
+            "mystery": "Source"
+        },
+        {
+            "index": "28",
+            "country": "Kuwait",
+            "cases": "58",
+            "deaths": "0",
+            "serious": "0",
+            "critical": "0",
+            "recovered": "0",
+            "mystery": "Source"
+        },
+        {
+            "index": "29",
+            "country": "Bahrain",
+            "cases": "56",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "1",
+            "mystery": "Source"
+        },
+        {
+            "index": "30",
+            "country": "Canada",
+            "cases": "54",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "1",
+            "recovered": "8",
+            "mystery": "Source"
+        },
+        {
+            "index": "31",
+            "country": "Thailand",
+            "cases": "47",
+            "deaths": "1",
+            "serious": "1",
+            "critical": "-",
+            "recovered": "31",
+            "mystery": "Source"
+        },
+        {
+            "index": "32",
+            "country": "Iraq",
+            "cases": "46",
+            "deaths": "3",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "33",
+            "country": "Taiwan",
+            "cases": "45",
+            "deaths": "1",
+            "serious": "0",
+            "critical": "0",
+            "recovered": "12",
+            "mystery": "Source"
+        },
+        {
+            "index": "34",
+            "country": "Greece",
+            "cases": "45",
+            "deaths": "0",
+            "serious": "1",
+            "critical": "-",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "35",
+            "country": "Iceland",
+            "cases": "45",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "36",
+            "country": "India",
+            "cases": "31",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "3",
+            "mystery": "Source"
+        },
+        {
+            "index": "37",
+            "country": "UAE",
+            "cases": "43",
+            "deaths": "0",
+            "serious": "2",
+            "critical": "-",
+            "recovered": "7",
+            "mystery": "Source"
+        },
+        {
+            "index": "38",
+            "country": "Czech Republic",
+            "cases": "19",
+            "deaths": "0",
+            "serious": "0",
+            "critical": "0",
+            "recovered": "0",
+            "mystery": "Source"
+        },
+        {
+            "index": "39",
+            "country": "Ireland",
+            "cases": "18",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "40",
+            "country": "Algeria",
+            "cases": "17",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "41",
+            "country": "Israel",
+            "cases": "17",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "42",
+            "country": "Vietnam",
+            "cases": "17",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "16",
+            "mystery": "Source"
+        },
+        {
+            "index": "43",
+            "country": "San Marino",
+            "cases": "16",
+            "deaths": "1",
+            "serious": "3",
+            "critical": "-",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "44",
+            "country": "Lebanon",
+            "cases": "16",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "1",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "45",
+            "country": "Oman",
+            "cases": "16",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "2",
+            "mystery": "Source"
+        },
+        {
+            "index": "46",
+            "country": "Denmark",
+            "cases": "15",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "47",
+            "country": "Ecuador",
+            "cases": "14",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "1",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "48",
+            "country": "Brazil",
+            "cases": "13",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "49",
+            "country": "Finland",
+            "cases": "12",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "1",
+            "mystery": "Source"
+        },
+        {
+            "index": "50",
+            "country": "Macau",
+            "cases": "10",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "6",
+            "mystery": ""
+        },
+        {
+            "index": "51",
+            "country": "Croatia",
+            "cases": "10",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "52",
+            "country": "Georgia",
+            "cases": "9",
+            "deaths": "0",
+            "serious": "1",
+            "critical": "-",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "53",
+            "country": "Qatar",
+            "cases": "8",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "54",
+            "country": "Portugal",
+            "cases": "8",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "55",
+            "country": "Argentina",
+            "cases": "8",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "56",
+            "country": "Romania",
+            "cases": "8",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "3",
+            "mystery": "Source"
+        },
+        {
+            "index": "57",
+            "country": "Belarus",
+            "cases": "6",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "58",
+            "country": "Azerbaijan",
+            "cases": "6",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "59",
+            "country": "Slovenia",
+            "cases": "6",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "0",
+            "mystery": "Source"
+        },
+        {
+            "index": "60",
+            "country": "Mexico",
+            "cases": "6",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "1",
+            "mystery": "Source"
+        },
+        {
+            "index": "61",
+            "country": "New Zealand",
+            "cases": "5",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "62",
+            "country": "Estonia",
+            "cases": "5",
+            "deaths": "0",
+            "serious": "0",
+            "critical": "0",
+            "recovered": "0",
+            "mystery": "Source"
+        },
+        {
+            "index": "63",
+            "country": "Saudi Arabia",
+            "cases": "5",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "64",
+            "country": "Pakistan",
+            "cases": "5",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": ""
+        },
+        {
+            "index": "65",
+            "country": "Philippines",
+            "cases": "5",
+            "deaths": "1",
+            "serious": "1",
+            "critical": "-",
+            "recovered": "2",
+            "mystery": "Source"
+        },
+        {
+            "index": "66",
+            "country": "Poland",
+            "cases": "5",
+            "deaths": "0",
+            "serious": "0",
+            "critical": "0",
+            "recovered": "0",
+            "mystery": "Source"
+        },
+        {
+            "index": "67",
+            "country": "Chile",
+            "cases": "5",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "68",
+            "country": "Senegal",
+            "cases": "4",
+            "deaths": "0",
+            "serious": "0",
+            "critical": "0",
+            "recovered": "0",
+            "mystery": "Source"
+        },
+        {
+            "index": "69",
+            "country": "Palestine",
+            "cases": "4",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "70",
+            "country": "Russia",
+            "cases": "4",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "2",
+            "mystery": "Source"
+        },
+        {
+            "index": "71",
+            "country": "Indonesia",
+            "cases": "4",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "72",
+            "country": "Egypt",
+            "cases": "3",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "1",
+            "mystery": "Source"
+        },
+        {
+            "index": "73",
+            "country": "Hungary",
+            "cases": "2",
+            "deaths": "0",
+            "serious": "0",
+            "critical": "0",
+            "recovered": "0",
+            "mystery": "Source"
+        },
+        {
+            "index": "74",
+            "country": "Morocco",
+            "cases": "2",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "75",
+            "country": "Bosnia",
+            "cases": "2",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "76",
+            "country": "Luxembourg",
+            "cases": "2",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "77",
+            "country": "Cameroon",
+            "cases": "2",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "78",
+            "country": "Nepal",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "1",
+            "mystery": ""
+        },
+        {
+            "index": "79",
+            "country": "Cambodia",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "1",
+            "mystery": ""
+        },
+        {
+            "index": "80",
+            "country": "Sri Lanka",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "1",
+            "mystery": ""
+        },
+        {
+            "index": "81",
+            "country": "Afghanistan",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": ""
+        },
+        {
+            "index": "82",
+            "country": "North Macedonia",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": ""
+        },
+        {
+            "index": "83",
+            "country": "Nigeria",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": ""
+        },
+        {
+            "index": "84",
+            "country": "Lithuania",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": ""
+        },
+        {
+            "index": "85",
+            "country": "Monaco",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "-",
+            "critical": "-",
+            "recovered": "",
+            "mystery": ""
+        },
+        {
+            "index": "86",
+            "country": "Ukraine",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": ""
+        },
+        {
+            "index": "87",
+            "country": "Latvia",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": ""
+        },
+        {
+            "index": "88",
+            "country": "Tunisia",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": ""
+        },
+        {
+            "index": "89",
+            "country": "Jordan",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": ""
+        },
+        {
+            "index": "90",
+            "country": "Andorra",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": ""
+        },
+        {
+            "index": "91",
+            "country": "Armenia",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": ""
+        },
+        {
+            "index": "92",
+            "country": "Dominican Republic",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": ""
+        },
+        {
+            "index": "93",
+            "country": "Liechtenstein",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "94",
+            "country": "Bhutan",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "95",
+            "country": "Gibraltar",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "1",
+            "critical": "",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "96",
+            "country": "Serbia",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "97",
+            "country": "Vatican City",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "98",
+            "country": "Colombia",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": "Source"
+        },
+        {
+            "index": "99",
+            "country": "South Africa",
+            "cases": "1",
+            "deaths": "0",
+            "serious": "",
+            "critical": "",
+            "recovered": "",
+            "mystery": "Source"
+        }
+    ],
+    "totalOther": {
+        "index": "100",
+        "country": "TOTAL",
+        "cases": "102,084",
+        "deaths": "3,491",
+        "serious": "6,087",
+        "critical": "49",
+        "recovered": "57,331",
+        "mystery": ""
+    },
+    "totalChina": {
+        "index": "7",
+        "country": "Mainland China",
+        "cases": "80,651",
+        "deaths": "3,070",
+        "serious": "5,489",
+        "critical": "-",
+        "recovered": "55,404",
+        "mystery": "Source"
+    },
+    "lastUpdated": "2020-03-06T23:33:00-08:00"
+}

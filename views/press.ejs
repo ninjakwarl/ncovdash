@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head'); -%>
+
+<body>
+    <%- include('./partials/navigation'); -%>
+    <div class="container-fluid">
+        <div class="col" style="background-color: #4a4b4f; width: inherit; border-radius: 25px;">
+            <h1
+                style="color: white; font-size: 45px; text-align: center; padding-top: 15px; font-weight: bolder; margin-bottom: 25px;">
+                <svg style="width: 55px;" aria-hidden="true" focusable="false" data-prefix="far" data-icon="newspaper"
+                    class="svg-inline--fa fa-newspaper fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512">
+                    <path fill="white"
+                        d="M552 64H112c-20.858 0-38.643 13.377-45.248 32H24c-13.255 0-24 10.745-24 24v272c0 30.928 25.072 56 56 56h496c13.255 0 24-10.745 24-24V88c0-13.255-10.745-24-24-24zM48 392V144h16v248c0 4.411-3.589 8-8 8s-8-3.589-8-8zm480 8H111.422c.374-2.614.578-5.283.578-8V112h416v288zM172 280h136c6.627 0 12-5.373 12-12v-96c0-6.627-5.373-12-12-12H172c-6.627 0-12 5.373-12 12v96c0 6.627 5.373 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.627 5.373-12 12-12h136c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H172c-6.627 0-12-5.373-12-12zm192 0v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12zm0-144v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12zm0 72v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12z">
+                    </path>
+                </svg> Press
+            </h1>
+
+            <div class="row">
+                <div class="col-lg-11 col-sm-12 container--wrap center">
+                    <h2
+                        style="color: #ffffff; font-size: 35px; text-align: center; padding-top: 15px; font-weight: bolder;">
+                        The fastest way to reach me for a story is to fill out this form. I will return your inquiry as
+                        soon as I possibly can.</h2>
+                    <!-- modify this form HTML and place wherever you want your form -->
+
+                    <div class="page-wrap">
+                        <form action="https://formspree.io/xayjzard" method="POST">
+
+
+                            <div class="styled-input">
+                                <input type="text" name="_replyto" required />
+                                <label>Your Email</label>
+                                <span></span>
+                            </div>
+
+                            <div class="styled-input wide">
+                                <textarea name="message" required></textarea>
+                                <label>Message</label>
+                                <span></span>
+                            </div>
+
+
+
+                            <!-- your other form fields go here -->
+                            <div class="styled-input">
+                                <button class="btn btn-primary" type="submit">Send</button>
+
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <h2
+                    style="color: #ffffff; font-size: 35px; text-align: center; padding-top: 15px; font-weight: bolder;">
+                    Recent Press Coverage of nCoV2019.live</h2>
+                    <ol style="color: #ffffff; font-size: 20px;">
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./partials/scripts'); -%>
+</body>
+
+</html>

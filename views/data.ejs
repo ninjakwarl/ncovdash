@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head'); -%>
+
+<body>
+  <%- include('./partials/navigation'); -%>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <div class="navbar-nav mr-auto" style="width: 100%;">
+      <div class="dropdown" style="width: 100%;">
+        <button style="width: 100%; text-align: left;" class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Jump to Region
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#QuickFacts">Quick Facts</a>
+          <% data.displayOrder.forEach(function(region){ %>
+          <a class="dropdown-item" href="#<%= region %>"><%= region %></a>
+          <% }) %>
+        </div>
+      </div>
+
+      <div class="mobile-nav-legend sort-copy">
+        <div class="mobile-nav-legend-label name">
+          <span class="legend-label">Sort by:&nbsp;&nbsp;&nbsp;</span>
+        </div>
+      </div>
+
+      <% data.displayOrder.forEach(function(region, index){ %>
+
+      <div id="mobile-nav-legend_<%= region %>" class="mobile-nav-legend">
+        <div data-region="<%= region %>" data-action="name" class="cateogry_sort mobile-nav-legend-item">
+          <span class="legend-marker name">&#8226;</span>
+          <span class="legend-label">Name</span>
+        </div>
+        <div class="mobile-nav-legend-items">
+          <div data-region="<%= region %>" data-action="confirmed" class="cateogry_sort mobile-nav-legend-item">
+            <span class="legend-marker confirmed">&#8226;</span>
+            <span class="legend-label sorted-column--desc">Cases</span>
+          </div>
+          <div data-region="<%= region %>" data-action="deaths" class="cateogry_sort mobile-nav-legend-item">
+            <span class="legend-marker deceased">&#8226;</span>
+            <span class="legend-label">Deaths</span>
+          </div>
+          <div data-region="<%= region %>" data-action="recovered" class="cateogry_sort mobile-nav-legend-item">
+            <span class="legend-marker recovered">&#8226;</span>
+            <span class="legend-label">Recovered</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobile-nav-total_<%= region %>" class="mobile-nav-legend totals">
+        <div class="mobile-nav-legend-label name">
+          <span class="legend-label">TOTAL&nbsp;&nbsp;&nbsp;</span>
+        </div>
+
+        <div class="mobile-nav-legend-items">
+          <div class="mobile-nav-legend-item">
+            <span class="legend-label confirmed"><%= data[region].regionTotal.cases %></span>
+          </div>
+          <div class="mobile-nav-legend-item">
+            <span class="legend-label deceased"><%= data[region].regionTotal.deaths %></span>
+          </div>
+          <div class="mobile-nav-legend-item">
+            <span class="legend-label recovered"><%= data[region].regionTotal.recovered %> (<%= data[region].recoveryRate %>%)</span>
+          </div>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+  </nav>
+  <div class="content container-fluid">
+    <div class="row">
+      <div class="col col-lg-3">
+
+        <span id="QuickFacts" class="mobile-dropdown-anchor"></span>
+        <div class="container--wrap">
+          <p style="color: #ffffff; font-size: 30px; text-align: center; padding-top: 15px; font-weight: bolder; margin-bottom: 0;">
+            Quick Info</p>
+          <p style="color: #ffffff; font-size: 12px; text-align: center; font-weight: bolder; margin-bottom: 0;">
+            updated: <i><%= data.lastUpdated %></i></p>
+          <p style="color: #ffffff; font-size: 12px; text-align: center; font-weight: bolder; margin-bottom: 0;">
+            (NOTE: Not all countries update at the same time)</p>
+          <table>
+            <tr>
+              <p style="color: rgb(101, 221, 155); font-weight: bold; text-align: center; border-bottom: 0; font-size: 50px; margin-bottom: 0px;">
+                <svg style="width: 25px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="currentColor"
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                  </path>
+                </svg> <%= data['Global'].regionTotal.cases %></p>
+              <p style="color: #ffffff; font-size: 18px; font-weight: bold; border-bottom: 0; text-align: center;">
+                Total Confirmed Cases</p>
+            </tr>
+            <tr>
+              <p style="color: #F65164; font-weight: bold; text-align: center; border-bottom: 0; font-size: 50px; margin-bottom: 0px;">
+                <svg style="width: 25px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="skull-crossbones" class="svg-inline--fa fa-skull-crossbones fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path fill="currentColor"
+                    d="M439.15 453.06L297.17 384l141.99-69.06c7.9-3.95 11.11-13.56 7.15-21.46L432 264.85c-3.95-7.9-13.56-11.11-21.47-7.16L224 348.41 37.47 257.69c-7.9-3.95-17.51-.75-21.47 7.16L1.69 293.48c-3.95 7.9-.75 17.51 7.15 21.46L150.83 384 8.85 453.06c-7.9 3.95-11.11 13.56-7.15 21.47l14.31 28.63c3.95 7.9 13.56 11.11 21.47 7.15L224 419.59l186.53 90.72c7.9 3.95 17.51.75 21.47-7.15l14.31-28.63c3.95-7.91.74-17.52-7.16-21.47zM150 237.28l-5.48 25.87c-2.67 12.62 5.42 24.85 16.45 24.85h126.08c11.03 0 19.12-12.23 16.45-24.85l-5.5-25.87c41.78-22.41 70-62.75 70-109.28C368 57.31 303.53 0 224 0S80 57.31 80 128c0 46.53 28.22 86.87 70 109.28zM280 112c17.65 0 32 14.35 32 32s-14.35 32-32 32-32-14.35-32-32 14.35-32 32-32zm-112 0c17.65 0 32 14.35 32 32s-14.35 32-32 32-32-14.35-32-32 14.35-32 32-32z">
+                  </path>
+                </svg> <%= data['Global'].regionTotal.deaths %></p>
+              <p style="color: #ffffff; font-size: 18px; font-weight: bold; border-bottom: 0; text-align: center;">
+                Total Deceased</p>
+            </tr>
+            <tr>
+              <p style="color: rgb(248, 245, 64); font-weight: bold; text-align: center; border-bottom: 0; font-size: 50px; margin-bottom: 0px;">
+                <svg style="width: 25px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="procedures" class="svg-inline--fa fa-procedures fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                  <path fill="currentColor"
+                    d="M528 224H272c-8.8 0-16 7.2-16 16v144H64V144c0-8.8-7.2-16-16-16H16c-8.8 0-16 7.2-16 16v352c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48h512v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V336c0-61.9-50.1-112-112-112zM136 96h126.1l27.6 55.2c5.9 11.8 22.7 11.8 28.6 0L368 51.8 390.1 96H512c8.8 0 16-7.2 16-16s-7.2-16-16-16H409.9L382.3 8.8C376.4-3 359.6-3 353.7 8.8L304 108.2l-19.9-39.8c-1.4-2.7-4.1-4.4-7.2-4.4H136c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8zm24 256c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64z">
+                  </path>
+                </svg> <%= data['Global'].regionTotal.serious %></p>
+              <p style="color: #ffffff; font-size: 18px; font-weight: bold; border-bottom: 0; text-align: center;">
+                Total Serious</p>
+            </tr>
+            <tr>
+              <p style="color: rgb(68, 155, 226); font-weight: bold; text-align: center; border-bottom: 0; font-size: 50px; margin-bottom: 0px;">
+                <svg style="width: 25px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heartbeat" class="svg-inline--fa fa-heartbeat fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="currentColor"
+                    d="M320.2 243.8l-49.7 99.4c-6 12.1-23.4 11.7-28.9-.6l-56.9-126.3-30 71.7H60.6l182.5 186.5c7.1 7.3 18.6 7.3 25.7 0L451.4 288H342.3l-22.1-44.2zM473.7 73.9l-2.4-2.5c-51.5-52.6-135.8-52.6-187.4 0L256 100l-27.9-28.5c-51.5-52.7-135.9-52.7-187.4 0l-2.4 2.4C-10.4 123.7-12.5 203 31 256h102.4l35.9-86.2c5.4-12.9 23.6-13.2 29.4-.4l58.2 129.3 49-97.9c5.9-11.8 22.7-11.8 28.6 0l27.6 55.2H481c43.5-53 41.4-132.3-7.3-182.1z">
+                  </path>
+                </svg> <%= data['Global'].regionTotal.recovered %></p>
+              <p style="color: #ffffff; font-size: 18px; font-weight: bold; border-bottom: 0; text-align: center;">
+                Total Recovered</p>
+            </tr>
+            <tr>
+              <p style="color: #ffffff; font-weight: bold; text-align: center; border-bottom: 0; font-size: 50px; margin-bottom: 0px;">
+                <svg style="width: 25px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="globe-asia" class="svg-inline--fa fa-globe-asia fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                  <path fill="currentColor"
+                    d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm-11.34 240.23c-2.89 4.82-8.1 7.77-13.72 7.77h-.31c-4.24 0-8.31 1.69-11.31 4.69l-5.66 5.66c-3.12 3.12-3.12 8.19 0 11.31l5.66 5.66c3 3 4.69 7.07 4.69 11.31V304c0 8.84-7.16 16-16 16h-6.11c-6.06 0-11.6-3.42-14.31-8.85l-22.62-45.23c-2.44-4.88-8.95-5.94-12.81-2.08l-19.47 19.46c-3 3-7.07 4.69-11.31 4.69H50.81C49.12 277.55 48 266.92 48 256c0-110.28 89.72-200 200-200 21.51 0 42.2 3.51 61.63 9.82l-50.16 38.53c-5.11 3.41-4.63 11.06.86 13.81l10.83 5.41c5.42 2.71 8.84 8.25 8.84 14.31V216c0 4.42-3.58 8-8 8h-3.06c-3.03 0-5.8-1.71-7.15-4.42-1.56-3.12-5.96-3.29-7.76-.3l-17.37 28.95zM408 358.43c0 4.24-1.69 8.31-4.69 11.31l-9.57 9.57c-3 3-7.07 4.69-11.31 4.69h-15.16c-4.24 0-8.31-1.69-11.31-4.69l-13.01-13.01a26.767 26.767 0 0 0-25.42-7.04l-21.27 5.32c-1.27.32-2.57.48-3.88.48h-10.34c-4.24 0-8.31-1.69-11.31-4.69l-11.91-11.91a8.008 8.008 0 0 1-2.34-5.66v-10.2c0-3.27 1.99-6.21 5.03-7.43l39.34-15.74c1.98-.79 3.86-1.82 5.59-3.05l23.71-16.89a7.978 7.978 0 0 1 4.64-1.48h12.09c3.23 0 6.15 1.94 7.39 4.93l5.35 12.85a4 4 0 0 0 3.69 2.46h3.8c1.78 0 3.35-1.18 3.84-2.88l4.2-14.47c.5-1.71 2.06-2.88 3.84-2.88h6.06c2.21 0 4 1.79 4 4v12.93c0 2.12.84 4.16 2.34 5.66l11.91 11.91c3 3 4.69 7.07 4.69 11.31v24.6z">
+                  </path>
+                </svg> <sup><%= data['Global'].regions.length - 1 %></sup>&frasl;<sub>195</sub>
+
+              </p>
+              <p style="color: #ffffff; font-size: 18px; font-weight: bold; border-bottom: 0; text-align: center;">
+                Total Countries Infected</p>
+            </tr>
+          </table>
+        </div>
+
+        <div class="container--wrap padding">
+          <h2 style="color: #ffffff; font-size: 35px; text-align: center; padding-top: 15px; font-weight: bolder; margin-bottom: 20px;">
+            <svg style="width: 35px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bullhorn" class="svg-inline--fa fa-bullhorn fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path fill="currentColor"
+                d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z">
+              </path>
+            </svg> 2.0 Site Update</h2>
+            <h4 class="sub-header">Web App Creator and Data Engineer:</h4>
+            <a href="https://twitter.com/ninjakwarl" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @ninjakwarl</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          
+            <h4 class="sub-header">Data Scientist and Dev Engineers Collabs:</h4>
+
+            <a href="https://twitter.com/job116" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @bozhao</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            <a href="https://twitter.com/jensec?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @jensechu</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        
+            
+            <a href="https://twitter.com/avi?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @avii</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            <h4 class="sub-header">New Fetch Updates!</h4>
+          <p class="default-copy">
+            Daily data changes are now reported. Numbers will reset around midnight (EDT).
+          </p>
+          <h4 class="sub-header">UPCOMING:</h4>
+          <p class="default-copy">
+            Graphs and other continents such as Africa and Philippines (Data is not cleansed for DOST).
+          </p>
+        </div>
+      </div>
+
+      <div class="col col-lg-9 tables">
+        <div class="row m-0">
+
+          <% data.displayOrder.forEach(function(region, index){ %>
+          <div id="container_<%= data.displayOrder[index] %>" class="container--wrap col hide-mobile">
+            <div class="sorted-table__header">
+              <div class="sorted-table__container">
+                <h2><%= region %></h2>
+              </div>
+
+              <div class="recovery-meter-container">
+                <span class="recovery-meter-label">
+                  Recovered:
+                </span>
+                <span class="recovery-meter">
+                  <span class="recovery-meter-stat">
+                    <%= data[region].recoveryRate %>%
+                  </span>
+                  <span class="recovery-meter-progress" style="width: <%= data[region].recoveryRate %>%">
+                    &nbsp;
+                  </span>
+                </span>
+              </div>
+            </div>
+            <table id="sortable_table_<%= region %>" class="display compact responsive">
+              <thead>
+                <tr>
+                  <th class="text--gray">Name</th>
+                  <th class="text--gray">Confirmed</th>
+                  <th class="text--gray">Changes Today</th>
+                  <th class="text--gray">Percentage Day Change</th>
+                  <th class="text--gray">Deceased</th>
+                  <th class="text--gray">Changes Today</th>
+                  <th class="text--gray">Percentage Death Change</th>
+                  <th class="text--gray">Recovered</th>
+                  <th class="text--gray">Serious</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text--gray">
+                    TOTAL
+                  </td>
+                  <td class="text--green">
+                    <%= data[region].regionTotal.cases %>
+                  </td>
+                  <td class="text--green">
+                    <%= data[region].regionTotal.todayCases %>
+                  </td>
+                  <td class="text--green">
+                    <%= data[region].regionTotal.todayCaseRate %>
+                  </td>
+                  <td class="text--red">
+                    <%= data[region].regionTotal.deaths %>
+                  </td>
+                  <td class="text--red">
+                    <%= data[region].regionTotal.todayDeaths %>
+                  </td>
+                  <td class="text--red">
+                    <%= data[region].regionTotal.todayDeathRate %>
+                  </td>
+                  <td class="text--blue">
+                    <%= data[region].regionTotal.recovered %>
+                  </td>
+                  <td class="text--yellow">
+                    <%= data[region].regionTotal.serious %>
+                  </td>
+                </tr>
+                <% for( let i = 0; i < data[region].regions.length; i++ ) { %>
+                <% if (data[region].regions[i].country != "Wuhan") { %>
+                <% if (data[region].regions[i].country != "Queue") { %>
+                <% if (data[region].regions[i].country != "TBD") { %>
+                <tr>
+                  <td class="text--gray">
+                    <%= data[region].regions[i].country %>
+                  </td>
+
+                  <td class="text--green">
+                    <%= data[region].regions[i].cases %>
+                  </td>
+
+                  <td class="text--green">
+                    <%= data[region].regions[i].todayCases %>
+                  </td>
+
+                  <td class="text--green">
+                    <%= data[region].regions[i].todayCaseRate %>
+                  </td>
+
+                  <td class="text--red">
+                    <%= data[region].regions[i].deaths %>
+                  </td>
+                  <td class="text--red">
+                    <%= data[region].regions[i].todayDeaths %>
+                  </td>
+                  <td class="text--red">
+                    <%= data[region].regions[i].todayDeathRate %>
+                  </td>
+                  <td class="text--blue">
+                    <%= data[region].regions[i].recovered %>
+                  </td>
+                  <td class="text--yellow">
+                    <%= data[region].regions[i].serious %>
+                  </td>
+                </tr>
+                <% } %>
+                <% } %>
+                <% } %>
+                <% } %>
+              </tbody>
+            </table>
+          </div>
+          <% if ( index % 2 === 1 ) { %>
+          <div class="w-100"></div>
+          <% } %>
+          <% }) %>
+
+          <% if ( data.displayOrder.length % 2 !== 0) { %>
+          <div class="col row-wrapper">
+            &nbsp;
+          </div>
+          <% } %>
+
+          <% data.displayOrder.forEach(function(region, index){ %>
+          <div id="container_mobile_<%= data.displayOrder[index] %>" class="container--wrap col hide-desktop">
+            <div class="sorted-table__header">
+              <span id="<%= data.displayOrder[index] %>" class="mobile-dropdown-anchor"></span>
+
+              <div class="sorted-table__container">
+                <h2><%= region %></h2>
+              </div>
+
+              <div class="recovery-meter-container">
+                <span class="recovery-meter-label">
+                  Recovered:
+                </span>
+                <span class="recovery-meter">
+                  <span class="recovery-meter-stat">
+                    <%= data[region].recoveryRate %>%
+                  </span>
+                  <span class="recovery-meter-progress" style="width: <%= data[region].recoveryRate %>%">
+                    &nbsp;
+                  </span>
+                </span>
+              </div>
+            </div>
+            <table id="sortable_table_mobile_<%= region %>" class="display compact responsive">
+              <thead>
+                <tr>
+                  <th class="text--gray" data-action="name">o</th>
+                  <th class="text--gray" data-action="confirmed">o</th>
+                  <th class="text--gray" data-action="caseRate">o</th>
+                  <th class="text--gray" data-action="deaths">o</th>
+                  <th class="text--gray" data-action="deathRate">o</th>
+                  <th class="text--gray" data-action="recovered">o</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text--gray">
+                    TOTAL
+                  </td>
+                  <td class="text--green">
+                    <%= data[region].regionTotal.cases %>
+                  </td>
+                  <td class="text--green">
+                    <%= data[region].regionTotal.todayCaseRate %>
+                  </td>
+                  <td class="text--red">
+                    <%= data[region].regionTotal.deaths %>
+                  </td>
+                  <td class="text--red">
+                    <%= data[region].regionTotal.todayDeathRate %>
+                  </td>
+                  <td class="text--blue">
+                    <%= data[region].regionTotal.recovered %>
+                  </td>
+                </tr>
+                <% for( let i = 0; i < data[region].regions.length; i++ ) { %>
+                <% if (data[region].regions[i].country != "Wuhan") { %>
+                <% if (data[region].regions[i].country != "Queue") { %>
+                <% if (data[region].regions[i].country != "TBD") { %>
+                <tr>
+                  <td class="text--gray">
+                    <%= data[region].regions[i].country %>
+                  </td>
+                  <td class="text--green">
+                    <%= data[region].regions[i].cases %>
+                  </td>
+                  <td class="text--green">
+                    <%= data[region].regions[i].todayCaseRate %>
+                  </td>
+                  <td class="text--red">
+                    <%= data[region].regions[i].deaths %>
+                  </td>
+                  <td class="text--red">
+                    <%= data[region].regions[i].todayDeathRate %>
+                  </td>
+                  <td class="text--blue">
+                    <%= data[region].regions[i].recovered %>
+                  </td>
+                </tr>
+                <% } %>
+                <% } %>
+                <% } %>
+                <% } %>
+              </tbody>
+            </table>
+          </div>
+          <% if ( index % 2 === 1 ) { %>
+
+          <% } %>
+          <% }) %>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <%- include('./partials/scripts'); -%>
+
+  <script>
+    const mobileBreakpoint = 980;
+    const hideDayDataConfig = {
+      "columnDefs": [{
+          responsivePriority: 2,
+          targets: 1
+        },
+        {
+          "targets": [ 2,3,5,6 ],
+          "visible": false,
+          "searchable": false
+        }
+      ],
+    }
+    let config = {
+      responsive: {
+        details: false
+      },
+      "scrollY": "370px",
+      "scrollCollapse": true,
+      "language": {
+        "search": "&#128269;",
+        "searchPlaceholder": "search data"
+      },
+      "autoWidth": true,
+      "bInfo": false,
+      "bPaginate": false,
+      "order": [
+        [1, "desc"]
+      ],
+      "columnDefs": [{
+          responsivePriority: 2,
+          targets: 1
+        },
+        {
+          "targets": [ 3, 6 ],
+          "visible": false,
+          "searchable": false
+        }
+      ],
+      "columns": [{
+          "width": "20%"
+        },
+        {},
+        {
+          render: (data, type, row)=> {
+            if(data=== "0" || row[3] === "0.00" || row[3] === "0") return '';
+            if(type==="display") return `&#8593; ${data} (${row[3]}%)`
+            return data;
+          }
+        },
+        {},
+        {},
+        {
+          render: (data, type, row)=> {
+            if(data=== "0" || row[6] === "0.00" || row[6] === "0") return '';
+            if(type==="display") return `&#8593; ${data} (${row[6]}%)`
+            return data;
+          }
+        },
+        {},
+        {},
+        {}
+      ]
+    }
+
+    const mobileConfig = {
+      responsive: {
+        details: false
+      },
+      "ordering": true,
+      "scrollCollapse": true,
+      "language": {
+        "search": "&#128269;",
+        "searchPlaceholder": "search data"
+      },
+      "autoWidth": false,
+      "bInfo": false,
+      "bPaginate": false,
+      "order": [
+        [1, "desc"]
+      ],
+
+      "columnDefs": [{
+          width: 50,
+          targets: 0
+        },
+        {
+          "targets": [2, 4],
+          "visible": false,
+          "searchable": false
+        }
+      ],
+      "columns": [
+        {
+          "width": "50px"
+        },
+        {
+          render: (data, type, row)=> {
+            if(data=== "0" || row[2] === "0.00") return '';
+            if(type==="display" && row[2] !== "0") return `${data} <br/> (&#8593; ${row[2]}%)`
+            return data;
+          }
+        },
+        {},
+        {
+          render: (data, type, row)=> {
+            if(data=== "0" || row[4] === "0.00") return '';
+            if(type==="display" && row[4] !== "0") return `${data} <br/> (&#8593; ${row[4]}%)`
+            return data;
+          }
+        },
+        {},
+        {}
+      ]
+    }
+
+    $(document).ready(function() {
+      $('#sortable_table_Global').DataTable(config);
+      $('#sortable_table_USA').DataTable(config);
+      $('#sortable_table_China').DataTable({
+        ...config,
+        ...hideDayDataConfig
+      });
+      $('#sortable_table_Canada').DataTable({
+        ...config,
+        ...hideDayDataConfig
+      });
+      $('#sortable_table_Australia').DataTable({
+        ...config,
+        ...hideDayDataConfig
+      });
+      $('#sortable_table_LatinAmerica').DataTable(config);
+      $('#sortable_table_Europe').DataTable(config);
+
+      $('#sortable_table_mobile_Global').DataTable({
+        ...mobileConfig,
+        "scrollY": "370px"
+      });
+      $('#sortable_table_mobile_USA').DataTable(mobileConfig);
+      $('#sortable_table_mobile_China').DataTable(mobileConfig);
+      $('#sortable_table_mobile_Canada').DataTable(mobileConfig);
+      $('#sortable_table_mobile_Australia').DataTable(mobileConfig);
+      $('#sortable_table_mobile_LatinAmerica').DataTable(mobileConfig);
+      $('#sortable_table_mobile_Europe').DataTable(mobileConfig);
+
+      var displayOrder = [
+        "QuickFacts",
+        "Global",
+        "USA",
+        "Europe",
+        "China",
+        "Canada",
+        "Australia",
+        "LatinAmerica"
+      ]
+      var $dropdownLabel = $('.dropdown-toggle');
+      var $tableLegend = $('.mobile-nav-legend').first();
+      var topPoistion = (region) => {
+        return $('#container_mobile_' + region).offset().top - 250
+      }
+      var showRegionTotal = (region) => {
+        $dropdownLabel.text(region);
+        $('.show-element').removeClass('show-element')
+
+        $('.sort-copy').addClass('show-element')
+        $('#mobile-nav-legend_' + region).addClass('show-element')
+        $('#mobile-nav-total_' + region).addClass('show-element')
+      }
+
+      var handleCategorySort = function() {
+        $('.cateogry_sort').on('click', function() {
+          var action = $(this).data('action');
+          var region = $(this).data('region');
+          var $mobileTab = $(this).parents().find('#mobile-nav-legend_' + region)
+          var $selector = $("#sortable_table_mobile_" + region + " [data-action='" + action + "']")
+
+          $mobileTab.find('.sorted-column--desc').removeClass('sorted-column--desc');
+          $mobileTab.find('.sorted-column--asc').removeClass('sorted-column--asc');
+          $selector.click()
+
+          var className = $selector.hasClass('sorting_desc') ? 'sorted-column--desc' : 'sorted-column--asc'
+
+          $(this).find('.legend-label').addClass(className)
+          $(window).scrollTop(topPoistion(region) + 110);
+        })
+      }
+
+      handleCategorySort();
+
+      if (!!window.scrollY) {
+        $('nav.fixed-top').css({
+          'margin-top': '0'
+        });
+      }
+
+      $(window).scroll(function() {
+        var scrollPosition = $(document).scrollTop()
+
+        // Fix the Dropdwn Nav after main header scrolls.
+        if ($(document).scrollTop() > 60) {
+          $('nav.fixed-top').css({
+            'margin-top': '0'
+          });
+        }
+
+        // Toggle the Legend and Totals in Dropdown Nav depending on
+        // which Region is currently in the viewport.
+        if (scrollPosition > topPoistion(displayOrder[7])) {
+          showRegionTotal(displayOrder[7])
+        } else if (scrollPosition > topPoistion(displayOrder[6])) {
+          showRegionTotal(displayOrder[6])
+        } else if (scrollPosition > topPoistion(displayOrder[5])) {
+          showRegionTotal(displayOrder[5])
+        } else if (scrollPosition > topPoistion(displayOrder[4])) {
+          showRegionTotal(displayOrder[4])
+        } else if (scrollPosition > topPoistion(displayOrder[3])) {
+          showRegionTotal(displayOrder[3])
+        } else if (scrollPosition > topPoistion(displayOrder[2])) {
+          showRegionTotal(displayOrder[2])
+        } else if (scrollPosition > topPoistion(displayOrder[1])) {
+          showRegionTotal(displayOrder[1])
+        } else if (scrollPosition > 60) {
+          handleCategorySort();
+          $('.show-element').removeClass('show-element')
+          $('nav.fixed-top').css({
+            'margin-top': '0'
+          });
+        } else {
+          $('.show-element').removeClass('show-element')
+          $dropdownLabel.text('Jump to Region');
+
+          $('nav.fixed-top').css({
+            'margin-top': '50px'
+          });
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

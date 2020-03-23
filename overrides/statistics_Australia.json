@@ -1,0 +1,114 @@
+{
+  "regions": [{
+    "country": "New South Wales",
+    "cases": "307",
+    "deaths": "",
+    "recovered": "",
+    "serious": "5",
+    "critical": "",
+    "todayCases": "",
+    "todayDeaths": ""
+  }, {
+    "country": "Queensland",
+    "cases": "144",
+    "deaths": "",
+    "recovered": "",
+    "serious": "",
+    "critical": "",
+    "todayCases": "",
+    "todayDeaths": ""
+  }, {
+    "country": "Victoria",
+    "cases": "150",
+    "deaths": "",
+    "recovered": "",
+    "serious": "",
+    "critical": "",
+    "todayCases": "",
+    "todayDeaths": ""
+  }, {
+    "country": "South Australia",
+    "cases": "42",
+    "deaths": "",
+    "recovered": "3",
+    "serious": "",
+    "critical": "",
+    "todayCases": "",
+    "todayDeaths": ""
+  }, {
+    "country": "Western Australia",
+    "cases": "52",
+    "deaths": "",
+    "recovered": "1",
+    "serious": "",
+    "critical": "",
+    "todayCases": "",
+    "todayDeaths": ""
+  }, {
+    "country": "Tasmania",
+    "cases": "10",
+    "deaths": "",
+    "recovered": "",
+    "serious": "",
+    "critical": "",
+    "todayCases": "",
+    "todayDeaths": ""
+  }, {
+    "country": "Canberra (ACT)",
+    "cases": "4",
+    "deaths": "",
+    "recovered": "",
+    "serious": "",
+    "critical": "",
+    "todayCases": "",
+    "todayDeaths": ""
+  }, {
+    "country": "Northern Territory",
+    "cases": "1",
+    "deaths": "",
+    "recovered": "",
+    "serious": "",
+    "critical": "",
+    "todayCases": "",
+    "todayDeaths": ""
+  }, {
+    "country": "External territories",
+    "cases": "0",
+    "deaths": "",
+    "recovered": "",
+    "serious": "",
+    "critical": "",
+    "todayCases": "",
+    "todayDeaths": ""
+  }, {
+    "country": "Jervis Bay Territory",
+    "cases": "0",
+    "deaths": "",
+    "recovered": "",
+    "serious": "",
+    "critical": "",
+    "todayCases": "",
+    "todayDeaths": ""
+  }, {
+    "country": "TBD",
+    "cases": "",
+    "deaths": "",
+    "recovered": "23",
+    "serious": "",
+    "critical": "",
+    "todayCases": "",
+    "todayDeaths": ""
+  }],
+  "regionTotal": {
+    "index ": "17",
+    "country ": "TOTAL",
+    "cases ": "710",
+    "deaths ": "6",
+    "serious ": "5",
+    "critical ": "0",
+    "recovered ": "27",
+    "mystery ": ""
+  },
+  "regionName": "Australia",
+  "lastUpdated": "2020-03-19T20:59:04-05:00"
+}

@@ -1,0 +1,87 @@
+{
+  "regions": [{
+    "country": "Hubei province (includes Wuhan)",
+    "cases": "67,800",
+    "deaths": "",
+    "recovered": "57,678",
+    "serious": "2,274",
+    "critical": "",
+    "todayCases": "",
+    "todayDeaths": ""
+  }, {
+    "country": "Guangdong province",
+    "cases": "1,378",
+    "deaths": "",
+    "recovered": "1,318",
+    "serious": "2",
+    "critical": "10",
+    "todayCases": "",
+    "todayDeaths": ""
+  }, {
+    "country": "Henan province",
+    "cases": "1,272",
+    "deaths": "",
+    "recovered": "1,250",
+    "serious": "0",
+    "critical": "0",
+    "todayCases": "",
+    "todayDeaths": ""
+  }, {
+    "country": "Zhejiang province",
+    "cases": "1,233",
+    "deaths": "",
+    "recovered": "1,217",
+    "serious": "1",
+    "critical": "1",
+    "todayCases": "",
+    "todayDeaths": ""
+  }, {
+    "country": "Hunan province",
+    "cases": "1,018",
+    "deaths": "",
+    "recovered": "1,014",
+    "serious": "0",
+    "critical": "0",
+    "todayCases": "",
+    "todayDeaths": ""
+  }, {
+    "country": "Beijing",
+    "cases": "479",
+    "deaths": "",
+    "recovered": "379",
+    "serious": "",
+    "critical": "",
+    "todayCases": "",
+    "todayDeaths": ""
+  }, {
+    "country": "Shanghai",
+    "cases": "363",
+    "deaths": "",
+    "recovered": "326",
+    "serious": "2",
+    "critical": "8",
+    "todayCases": "",
+    "todayDeaths": ""
+  }, {
+    "country": "Other regions",
+    "cases": "7,385",
+    "deaths": "",
+    "recovered": "7,238",
+    "serious": "",
+    "critical": "",
+    "todayCases": "",
+    "todayDeaths": ""
+  }],
+  "regionTotal": {
+    "index ": "14",
+    "country ": "TOTAL",
+    "cases ": "80,928",
+    "deaths ": "3,245",
+    "serious ": "2,314",
+    "critical ": "",
+    "recovered ": "70,420",
+    "mystery ": ""
+  },
+  "regionName": "China",
+  "lastUpdated": "2020-03-19T20:59:04-05:00"
+}

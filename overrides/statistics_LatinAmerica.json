@@ -1,0 +1,148 @@
+{
+  "regions": [{
+    "country": "Brazil",
+    "cases": "635",
+    "deaths": "0",
+    "serious": "1",
+    "recovered": "1",
+    "critical": "0",
+    "todayCases": "0",
+    "todayDeaths": "0"
+  }, {
+    "country": "Chile",
+    "cases": "238",
+    "deaths": "0",
+    "serious": "0",
+    "recovered": "0",
+    "critical": "0",
+    "todayCases": "0",
+    "todayDeaths": "0"
+  }, {
+    "country": "Costa Rica",
+    "cases": "69",
+    "deaths": "0",
+    "serious": "1",
+    "recovered": "0",
+    "critical": "0",
+    "todayCases": "0",
+    "todayDeaths": "0"
+  }, {
+    "country": "Argentina",
+    "cases": "97",
+    "deaths": "0",
+    "serious": "0",
+    "recovered": "0",
+    "critical": "0",
+    "todayCases": "0",
+    "todayDeaths": "0"
+  }, {
+    "country": "Ecuador",
+    "cases": "168",
+    "deaths": "0",
+    "serious": "6",
+    "recovered": "0",
+    "critical": "0",
+    "todayCases": "0",
+    "todayDeaths": "0"
+  }, {
+    "country": "Peru",
+    "cases": "145",
+    "deaths": "0",
+    "serious": "16",
+    "recovered": "1",
+    "critical": "0",
+    "todayCases": "0",
+    "todayDeaths": "0"
+  }, {
+    "country": "Panama",
+    "cases": "137",
+    "deaths": "0",
+    "serious": "8",
+    "recovered": "0",
+    "critical": "0",
+    "todayCases": "0",
+    "todayDeaths": "0"
+  }, {
+    "country": "Mexico",
+    "cases": "118",
+    "deaths": "0",
+    "serious": "1",
+    "recovered": "4",
+    "critical": "1",
+    "todayCases": "0",
+    "todayDeaths": "0"
+  }, {
+    "country": "Colombia",
+    "cases": "102",
+    "deaths": "0",
+    "serious": "0",
+    "recovered": "0",
+    "critical": "0",
+    "todayCases": "0",
+    "todayDeaths": "0"
+  }, {
+    "country": "Dominican Republic",
+    "cases": "34",
+    "deaths": "0",
+    "serious": "0",
+    "recovered": "0",
+    "critical": "0",
+    "todayCases": "0",
+    "todayDeaths": "0"
+  }, {
+    "country": "Paraguay",
+    "cases": "11",
+    "deaths": "0",
+    "serious": "1",
+    "recovered": "0",
+    "critical": "0",
+    "todayCases": "0",
+    "todayDeaths": "0"
+  }, {
+    "country": "Cuba",
+    "cases": "11",
+    "deaths": "0",
+    "serious": "0",
+    "recovered": "0",
+    "critical": "1",
+    "todayCases": "0",
+    "todayDeaths": "0"
+  }, {
+    "country": "Bolivia",
+    "cases": "15",
+    "deaths": "0",
+    "serious": "0",
+    "recovered": "0",
+    "critical": "0",
+    "todayCases": "0",
+    "todayDeaths": "0"
+  }, {
+    "country": "Honduras",
+    "cases": "12",
+    "deaths": "0",
+    "serious": "0",
+    "recovered": "0",
+    "critical": "0",
+    "todayCases": "0",
+    "todayDeaths": "0"
+  }],
+  "regionTotal": {
+    "index ": "21",
+    "country ": "TOTAL",
+    "cases ": "5,507",
+    "deaths ": "135",
+    "serious ": "2",
+    "critical ": "0",
+    "recovered ": "4",
+    "mystery ": "",
+    "cases": "NaN",
+    "deaths": "NaN",
+    "serious": "NaN",
+    "critical": "NaN",
+    "recovered": "NaN",
+    "todayCases": "",
+    "todayDeaths": ""
+  },
+  "regionName": "LatinAmerica",
+  "lastUpdated": "2020-03-19T20:59:04-05:00"
+}

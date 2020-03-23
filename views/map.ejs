@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head'); -%>
+
+<body>
+  <%- include('./partials/navigation'); -%>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col" style="background-color: #4a4b4f; width: inherit; border-radius: 25px;">
+                <div class="jumbotron-fluid">
+                    <h1 style="color: rgb(205, 205, 224);">Map</h1>
+                    <p style="color: rgb(205, 205, 224);">Key:</p>
+                    <ul style="color: rgb(205, 205, 224);">
+                        <li>
+                            Black: Cities with 1,000 or more cases
+                        </li>
+                        <li>
+                            Purple: Cities with 100 or more cases.
+                        </li>
+                        <li>
+                            Red: Cities with 20 or more cases.
+                        </li>
+                        <li>
+                            Orange: Less than 20 cases
+                        </li>
+                        <li>
+                            Diamond shape: Cities with deaths
+                        </li>
+                    </ul>
+                  </div>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1a04iBi41DznkMaQRnICO40ktROfnMfMx" width="100%" height="850px"></iframe>
+            </div>
+        </div>
+    </div>
+
+<%- include('./partials/scripts'); -%>
+</body>
+
+</html>
