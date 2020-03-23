@@ -4,7 +4,7 @@
   "description": "created by Karl Joseph Saycon",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "server": "node index.js"
   },
   "keywords": [],
   "author": "",
