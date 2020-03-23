@@ -3,7 +3,7 @@
   --stat-red: #F65164;
   --stat-yellow: rgb(248, 245, 64);
   --stat-blue: rgb(68, 155, 226);
-  --paleGray: #DFDFEF;
+  --paleGray: #ffffff;
 }
 
 .sorted-table__header {
@@ -157,7 +157,7 @@ table.dataTable.display tbody tr:first-of-type {
 }
 
 .container--wrap {
-  background-color: #445175;
+  background-color: #4a4b4f;
   border-radius: 15px;
   margin: 5px;
 }
@@ -189,7 +189,7 @@ table.dataTable.display tbody tr:first-of-type {
 .dropdown-item {
   font-weight: bolder;
   color: var(--paleGray);
-  background: #445175;
+  background: #4a4b4f;
   padding: 15px 20px;
 }
 
@@ -208,15 +208,15 @@ table.dataTable.display tbody tr:first-of-type {
 .dropdown-toggle:visited,
 .dropdown-toggle:focus {
   background: var(--paleGray);
-  background: #445174;
-  border: 1px solid #374061;
+  background: #4a4b4f;
+  border: 1px solid #434444;
   color: var(--paleGray);
   font-weight: bolder;
 }
 
 .dropdown-item:hover {
   color: var(--paleGray);
-  background: #364061;
+  background: #4a4b4f;
 
 }
 
@@ -254,14 +254,14 @@ table.dataTable.display tbody tr:first-of-type {
 }
 
 .sub-header {
-  color: #DFDFEF;
+  color: #ffffff;
   font-size: 18px;
   font-weight: bolder;
   margin: 5px 0;
 }
 
 .default-copy {
-  color: #DFDFEF;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -276,7 +276,7 @@ table.dataTable.display tbody tr:first-of-type {
 
 .recovery-meter-container {
   font-size: 14px;
-  color: #DFDFEF;
+  color: #ffffff;
   display: flex;
   align-items: center;
 }
@@ -413,7 +413,7 @@ input:focus~label, textarea:focus~label, input:valid~label
 /*, &.not-empty ~ label*/
   {
   font-size: 0.75em;
-  color: #DFDFEF;
+  color: #ffffff;
   top: -2.25rem;
   transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
 }
@@ -566,7 +566,7 @@ table.dataTable.compact thead.total_row th {
 }
 
 .sorted-table__header {
-  color: #DFDFEF;
+  color: #ffffff;
   font-size: 30px;
   padding-top: 15px;
   font-weight: bolder;

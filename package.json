@@ -1,7 +1,7 @@
 {
-  "name": "germ-tracker",
-  "version": "1.0.0",
-  "description": "",
+  "name": "virus-tracker",
+  "version": "1.2.0",
+  "description": "created by Karl Joseph Saycon",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
